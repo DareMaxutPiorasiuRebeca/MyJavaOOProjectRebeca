@@ -6,7 +6,6 @@ public class Main {
         ClassDemo obiect1 = new ClassDemo();
         obiect1.atribute2="ceva";
         obiect1.getAtribute1() = "altceva";
-
         Human rebeca = new Human();
         Human nicu = new Human();
         rebeca.email = "rebeca@test.com";
