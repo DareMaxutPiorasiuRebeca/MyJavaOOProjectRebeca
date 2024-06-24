@@ -60,6 +60,47 @@ public class Main {
         Car rebecaCar=new Car(" VW "," Bora ");
         rebecaCar.afisezaCar();
 
+        // exemplu clasa Person
+        Person bula = new Person();
+        System.out.println(bula.birthYear);
+
+        Person alinuta = new Person('f',"Alinuta","Bulinuta");
+        System.out.println(alinuta.fname +" "+ alinuta.lname);
+        Person jon=new Person('n',"John","Doe");
+        jon.afiseaza();
+        Person jeane=new Person('f',"Jeane","Doe");
+        System.out.println(jon);
+
+        //obiect person 1
+
+        Person pers1 = new Person("Ana",400441);
+        System.out.println("Prietenii imi spun "+pers1.nickName+" si ma gasesc la adresa "+pers1.zippCode);
+        pers1.show();
+
+        //obiect person 2
+
+        Person pers2=new Person("Radu",444453);
+        System.out.println("locuiesc cu sotia mea la Zipp "+pers2.zippCode+" si cunoscutii mi se areseaza cu "+ pers2.nickName);
+        pers2.show();
+
+        System.out.println("Tinerii casatoriti se numesc "+pers1.nickName +" si "+pers2.nickName+ "si vor locui dupa oficierea casatoriei la Zipp "+pers1.zippCode);
+        // exercitii animal
+
+        Animal ani1 = new Animal("Rex","Maro", true);
+        System.out.println(ani1.nume);
+        System.out.println(ani1.culoare);
+        System.out.println(ani1.isVegetarian);
+
+        Animal ani2 = new Animal("Speed", "Alb", false);
+
+        System.out.println(ani1.nume +" si "+ ani2.nume + " sunt prieteni buni si nu se cearta de la mancare");
+
+        ani1.doarme();
+        ani2.mananca();
+        ani1.afiseazaCuloarea();
+
+
+
     }
 
 }
