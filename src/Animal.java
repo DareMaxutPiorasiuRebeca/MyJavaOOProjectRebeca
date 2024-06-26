@@ -5,7 +5,11 @@ public class Animal {
 
 
 
-    Animal() { }
+    public Animal() {
+        isVegetarian = true;
+        nume = "Unknown";
+        culoare = "unknown";
+    }
 
     Animal(String nume){
         this.nume=nume;
@@ -21,15 +25,15 @@ public class Animal {
         this.isVegetarian=isVegetarian;
     }
     public void mananca(){
-        System.out.println(nume+" mananca");
+        System.out.println(this.nume+" mananca");
     }
     public void doarme(){
         System.out.println(nume+" doarme");
 
     }
 
-    public void afiseazaCuloarea(){
-        System.out.println(nume+ " are cunoarea "+culoare);
+    public String afiseazaCuloarea(){
+        return this.nume+ " are cunoarea "+culoare;
     }
 
 }

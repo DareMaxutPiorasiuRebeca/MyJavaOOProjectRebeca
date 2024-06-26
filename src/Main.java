@@ -91,13 +91,58 @@ public class Main {
         System.out.println(ani1.culoare);
         System.out.println(ani1.isVegetarian);
 
-        Animal ani2 = new Animal("Speed", "Alb", false);
+        Animal ani2 = new Animal("Speed", "Alb");
 
         System.out.println(ani1.nume +" si "+ ani2.nume + " sunt prieteni buni si nu se cearta de la mancare");
 
         ani1.doarme();
+        ani1.mananca();
+        System.out.println(ani1.afiseazaCuloarea());
+
+        ani2.doarme();
         ani2.mananca();
-        ani1.afiseazaCuloarea();
+        System.out.println( ani2.afiseazaCuloarea());
+
+        Elev elev1 = new Elev("Popescu Andrei", 9.68);
+        Elev elev2 = new Elev("Ionescu Alina", 9.82);
+        elev2.medieGenerala=8.00;
+        elev2.nume = "Pop ALina";
+        Elev.diriginte = "noul dirig";
+
+
+        System.out.println(elev1.nume+" + "+ elev1.medieGenerala+" "+ Elev.diriginte);
+        System.out.println(elev2.nume+" + " + elev2.medieGenerala);
+
+        elev1.afisareElev();
+        elev2.afisareElev();
+
+
+        EchipaFotbal Romania = new EchipaFotbal("Romania", 3);
+        EchipaFotbal Slovacia = new EchipaFotbal("Slovacia", 3);
+        Romania.punctaj = 4;
+        Slovacia.punctaj =2;
+        EchipaFotbal.campionat =" UEFA";
+
+        Romania.afisareNUmePunct();
+        Slovacia.afisareNUmePunct();
+
+        EchipaFotbal.metodaStatica();
+
+        // doua obiecte
+
+        Fotbalist fotbalist1 = new Fotbalist("Hagi");
+        Voleibalist voleibalist1 = new Voleibalist();
+
+        fotbalist1.seANtreneaza();
+        fotbalist1.seRecupereaza();
+        voleibalist1.seANtreneaza();
+        voleibalist1.seRecupereaza();
+
+
+
+
+
+
 
 
 
