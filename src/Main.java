@@ -138,6 +138,22 @@ public class Main {
         voleibalist1.seANtreneaza();
         voleibalist1.seRecupereaza();
 
+        Cat pisica1 = new Cat("Kity","alb cu negru", false, "terestru");
+        pisica1.scoateSunete();
+        Dog caine1 = new Dog("Lucky", "negru", false, "terestru");
+        caine1.scoateSunete();
+Movie movie1 = new Movie();
+movie1.setTitlu(" Titanic");
+movie1.setTipFilm(" drama ");
+movie1.setIMDBrating(8.5);
+
+movie1.setIMDBrating(8.7);
+
+        System.out.println(movie1.getTitlu()+movie1.getTipFilm()+movie1.getIMDBrating());
+
+
+
+
 
 
 
